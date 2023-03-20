@@ -1,0 +1,26 @@
+<template>
+    <button class="btn" onclick={handleClick}>Get Random Recipe</button>
+   </br>
+   </br>
+    <div style="display:flex;
+                flex-wrap:wrap;
+                background-color: aliceblue;
+                border-radius:5px;                
+    ">
+   <template if:true={check}>
+    <template for:each={result} for:item="rec">
+        <div key={rec.id}
+        style="display:flex;
+              flex-direction:row;
+              background-color:aqua;
+              padding:10px;
+              width:100%;
+              border-radius:5px;
+              border:1px solid black;">
+        <img class="img"  src={rec.image} style="border-radius: 5px;"/>
+        <p class="title">{rec.title}</p>
+    </div>
+    </template>
+   </template>
+</div>
+</template>

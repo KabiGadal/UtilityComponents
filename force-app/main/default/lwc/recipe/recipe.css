@@ -1,0 +1,29 @@
+.img{
+    width: 10rem;
+    height:5rem;
+    /* border: 1px solid black;  */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    color: black;
+  
+}
+
+.btn{
+    color: white;
+    background-color:green;
+    border-radius: 5px;
+}
+.btn:hover{
+    width: 17%;
+    height: 35px;
+    font-weight: 900;
+}

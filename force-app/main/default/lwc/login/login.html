@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Login" icon-name="custom:custom24">
+    <div class="slds-p-around_medium lgc-bg">
+
+        <lightning-input type="text" label="Email" placeholder="email" value={Email} onchange={handleEmail} required></lightning-input>
+
+    </div>
+
+    <div class="slds-p-around_medium lgc-bg">
+
+        <lightning-input type="Password" label="Password" placeholder="Password" value={Password} onchange={handlePassword} required></lightning-input>
+        </div>
+        <lightning-button  variant="brand" label="Login" title="Primary action"  onclick={handleRegister}  class="slds-m-left_x-small"></lightning-button>
+        <lightning-button id = 'Register' variant="brand" label="Register" title="Primary action"  onclick={handleClick}  class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="brand" label="Forgot Password" title="Primary action"  onclick={handleUpdate}  class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+
+</template>
