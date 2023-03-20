@@ -1,0 +1,13 @@
+<template>
+    
+    <lightning-card title="LWC Communication from Child-to-Parent Component">
+        <div class="slds-m-around_medium">
+        <p class="slds-text-align_center"> Count : {count}</p>
+        </div>
+        <c-child-l-w-c onsubs={handleSubs}
+                       onadd={handleAdd}
+        >
+        </c-child-l-w-c>
+       
+    </lightning-card>
+</template>

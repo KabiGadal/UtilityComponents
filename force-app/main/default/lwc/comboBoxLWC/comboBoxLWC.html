@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="LWC Combo Box Demo">
+        <lightning-combobox label="Select Account"
+                            value={showLabel}
+                            options={options}
+                            onchange={handleChange}
+                            >
+        </lightning-combobox>
+        <div> Your value is <b>{showLabel}</b></div>
+
+    </lightning-card>
+</template>

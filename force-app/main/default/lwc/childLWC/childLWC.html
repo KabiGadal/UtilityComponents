@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Child Component">
+        <div class="slds-align_absolute-center">
+            <lightning-button label="Substract"
+                            icon-name="utility:dash"
+                            onclick={handleSubs}
+                            class="slds-p-horizontal_medium"
+                            disabled={disableButton}
+                            >
+            </lightning-button>
+            <lightning-button label="Add"
+                            icon-name="utility:add"
+                            onclick={handleAdd}
+                            class="slds-p-horizontal_medium"
+            >
+            </lightning-button>
+        </div>
+    </lightning-card>
+    
+</template>

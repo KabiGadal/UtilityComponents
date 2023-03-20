@@ -1,0 +1,29 @@
+<template>
+    <lightning-button label={buttonLabel}
+                      variant="brand"
+                      onclick={buttonChange}>
+    </lightning-button>
+          <!-- Showing the related contact list if User clicks the button to show  -->
+            <template if:true={isVisible}>
+            <lightning-card title="Related Contacts">
+                <lightning-input type="search" 
+                                 onchange={handleChange}
+                                 value={searchKey}
+                                 label="Search"
+                                 >
+                </lightning-input>
+                <div class="slds-m-top_x-small">
+                    <lightning-datatable
+                                    key-field="id"
+                                    data={data}
+                                    columns={columns}
+                                    onrowselection={getSelectedName}
+                                    
+                    >
+                    </lightning-datatable>
+                </div>
+            </lightning-card>
+            </template>
+        
+  
+</template>
