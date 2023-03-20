@@ -32,4 +32,21 @@ export default class ChildLWC extends LightningElement {
         }
         this.dispatchEvent(new CustomEvent('add'));
     }
+
+    handleTwo(event){
+        const multiplyNumber = event.target.value;
+        this.trackingButtonClicks *= multiplyNumber
+        this.dispatchEvent(new CustomEvent('multiplytwo',{
+            detail : multiplyNumber
+        }));
+    }
+
+    
+    handleTen(event){
+        const multiplyNumber = event.target.value;
+        this.trackingButtonClicks *= multiplyNumber
+        this.dispatchEvent(new CustomEvent('multiplyten',{
+            detail : multiplyNumber
+        }));
+    }
 }

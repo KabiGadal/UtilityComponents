@@ -24,6 +24,16 @@ export default class Parent extends LightningElement {
         console.log('Parent Connected Call back method Called');
     }
 
+    handleMultiplyByTwo(e){
+        const multiNumber = e.detail;
+        this.count *= multiNumber;
+    }
+
+    handleMultiplyByTen(e){
+        const multiNumber = e.detail;
+        this.count *= multiNumber;
+    }
+
    
 
     // render(){
