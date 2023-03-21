@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Parent-To-Child">
+        <lightning-button label="Child-To-Parent"
+                          onclick={handleMove}
+                          variant="brand">
+        </lightning-button>
+        <lightning-input label="Enter Number"
+                         type="number"
+                         min="0"
+                         max="1000000000"
+                         value={numVal}
+                         onchange={handleChange}
+                         class="slds-p-horizontal_small"
+                         
+                        >
+        </lightning-input>
+        <lightning-button label="Add 10"
+                          onclick={handleAddValue}
+                          value="10"
+                          icon-name="utility:add"
+                          class="slds-p-horizontal_medium"
+        >
+        </lightning-button>
+        <lightning-button label="clear"
+                          onclick={handleClear_1}
+                          variant="destructive"
+                          class="slds-p-horizontal_medium"
+        >
+        </lightning-button>
+        <c-child-l-w-c receivedatafromparent={numVal}></c-child-l-w-c>
+                         
+    </lightning-card>
+</template>

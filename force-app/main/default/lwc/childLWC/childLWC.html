@@ -1,34 +1,36 @@
 <template>
+     <!-- Child to Parent -->
     <lightning-card title="Child Component">
-        <div class="slds-align_absolute-center">
-            <lightning-button label="Substract"
-                            icon-name="utility:dash"
-                            onclick={handleSubs}
-                            class="slds-p-horizontal_medium"
-                            disabled={disableButton}
-                            >
-            </lightning-button>
-            <lightning-button label="Add"
-                            icon-name="utility:add"
-                            onclick={handleAdd}
-                            class="slds-p-horizontal_medium"
-            >
-            </lightning-button>
-            <lightning-button label="2"
-                              value="2"
-                              icon-name="utility:close"
-                              onclick={handleTwo}
-                              class="slds-p-horizontal_medium"
-            >
-            </lightning-button>
-            <lightning-button label="10"
-                            icon-name="utility:close"
-                            value="10"
-                            onclick={handleTen}
-                            class="slds-p-horizontal_medium"
-            >
-            </lightning-button>
-        </div>
+            <div class="slds-align_absolute-center">
+                <lightning-button label="Substract"
+                                icon-name="utility:dash"
+                                onclick={handleSubs}
+                                class="slds-p-horizontal_medium"
+                                disabled={disableButton}
+                                >
+                </lightning-button>
+                <lightning-button label="Add"
+                                icon-name="utility:add"
+                                onclick={handleAdd}
+                                class="slds-p-horizontal_medium"
+                >
+                </lightning-button>
+                <lightning-button label="2"
+                                value="2"
+                                icon-name="utility:close"
+                                onclick={handleTwo}
+                                class="slds-p-horizontal_medium"
+                >
+                </lightning-button>
+                <lightning-button label="10"
+                                icon-name="utility:close"
+                                value="10"
+                                onclick={handleTen}
+                                class="slds-p-horizontal_medium"
+                >
+                </lightning-button>
+            </div>      
     </lightning-card>
+     <!-- Child to Parent -->
     
 </template>

@@ -1,8 +1,19 @@
 <template>
-    
-    <lightning-card title="LWC Communication from Child-to-Parent Component">
+    <!-- Child to Parent -->
+    <lightning-card title="Child-to-Parent">
+        <lightning-button label="Parent-To-Child"
+                          onclick={handleMove}
+                          variant="brand">
+        </lightning-button>
         <div class="slds-m-around_medium">
-        <p class="slds-text-align_center"> Count : {count}</p>
+            <p class="slds-text-align_center"> Count : {count}</p>
+            <div class="slds-align_absolute-center">
+                <lightning-button label="Clear"
+                                onclick={handleClear}
+                                variant="destructive"
+                                >
+                </lightning-button>
+            </div>
         </div>
         <c-child-l-w-c onsubs={handleSubs}
                        onadd={handleAdd}
@@ -12,4 +23,5 @@
         </c-child-l-w-c>
        
     </lightning-card>
+      <!-- Child to Parent -->
 </template>
